@@ -107,16 +107,10 @@ npm run test
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Oscar Espinoza**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@Oscar-Espinoza](https://github.com/githubhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Oscar-Espinoza](https://github.com/Oscar-Espinoza)
+- LinkedIn: [Oscar Espinoza](https://www.linkedin.com/in/oscar-espinoza-68a398a8/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -162,7 +156,7 @@ I would like to thank... -->
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
+<!-- ## ❓ FAQ (OPTIONAL) <a name="faq"></a> -->
 
 ## 📝 License <a name="license"></a>
 
