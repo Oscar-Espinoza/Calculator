@@ -76,9 +76,8 @@ npm installed
 
 Clone this repository to your desired folder:
 
-  git clone git@github.com:Oscar-Espinoza/Calculator.git
-  cd Calculator
--
+  - git clone git@github.com:Oscar-Espinoza/Calculator.git
+  - cd Calculator
 
 ### Install
 
@@ -101,11 +100,7 @@ npm run test
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
-
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Oscar Espinoza**
 
