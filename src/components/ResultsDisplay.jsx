@@ -2,14 +2,14 @@
 import PropTypes from 'prop-types';
 
 export default function ResultsDisplay(props) {
-  const { result } = props;
+  const { current } = props;
   return (
     <div className="results-container">
-      <p className="results">{result}</p>
+      <p className="results">{current}</p>
     </div>
   );
 }
 
 ResultsDisplay.propTypes = {
-  result: PropTypes.string.isRequired,
+  current: PropTypes.string.isRequired,
 };

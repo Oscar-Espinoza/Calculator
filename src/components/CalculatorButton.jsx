@@ -2,18 +2,20 @@
 import PropTypes from 'prop-types';
 
 export default function CalculatorButton(props) {
-  const { className, type, symbol } = props;
+  const {
+    className, type, symbol,
+  } = props;
   if (symbol === '0') {
     return (
-      <p className={`${className} zero ${type}`}>
+      <option className={`${className} zero ${type}`}>
         {symbol}
-      </p>
+      </option>
     );
   }
   return (
-    <p className={`${className} ${type}`}>
+    <option className={`${className} ${type}`}>
       {symbol}
-    </p>
+    </option>
   );
 }
 

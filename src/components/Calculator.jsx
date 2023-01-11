@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import ButtonsContainer from './ButtonsContainer';
 import ResultsDisplay from './ResultsDisplay';
+import calculate from '../logic/calculate';
 
 const calculatorButtons = [
   [
@@ -39,29 +40,35 @@ export default class Calculator extends Component {
   constructor() {
     super();
     this.state = {
-      pastResult: 0,
-      result: '0',
-      currentOperation: {
-        operator: '+',
-        number: 0,
-      },
+      total: '0',
+      next: '0',
+      operation: null,
     };
   }
 
   render() {
     const {
-      pastResult, result, currentOperation,
+      total, next, operation,
     } = this.state;
 
     return (
-      <div className="calculator">
+      <switch
+        className="calculator"
+        onClick={(e) => {
+          if (e.target.classList.contains('calculator-button')) {
+            const newState = calculate(this.state, e.target.innerText);
+            this.setState(newState);
+          }
+        }}
+      >
         <ResultsDisplay
-          result={result}
-          pastResult={pastResult}
-          currentOperation={currentOperation}
+          current={next || total}
+          total={total}
+          next={next}
+          operation={operation}
         />
-        <ButtonsContainer buttonRows={calculatorButtons} />
-      </div>
+        <ButtonsContainer buttonRows={calculatorButtons} calculate={calculate} />
+      </switch>
     );
   }
 }
