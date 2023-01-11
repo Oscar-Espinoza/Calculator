@@ -57,7 +57,6 @@ export default class Calculator extends Component {
         onClick={(e) => {
           if (e.target.classList.contains('calculator-button')) {
             const newState = calculate(this.state, e.target.innerText);
-            console.log(newState);
             this.setState(newState);
           }
         }}
