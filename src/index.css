@@ -24,12 +24,13 @@
   border: 1px solid gray;
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .results {
-  justify-self: end;
-  align-self: end;
+  justify-self: flex-end;
+  align-self: flex-end;
+  padding: 0 10px 5px 0;
 }
 
 .calculator-button {

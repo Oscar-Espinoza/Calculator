@@ -36,8 +36,8 @@ const calculatorButtons = [
 ];
 
 export default class Calculator extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       pastResult: 0,
       result: '0',
