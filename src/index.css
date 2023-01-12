@@ -13,6 +13,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 60px;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
 .results-container {
@@ -23,6 +30,7 @@
   grid-column-end: 5;
   border: 1px solid gray;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: flex-end;
 }

@@ -48,7 +48,8 @@ export default function Calculator() {
   } = calculator;
 
   return (
-    <switch
+    <button
+      type="button"
       className="calculator"
       onClick={(e) => {
         if (e.target.classList.contains('calculator-button')) {
@@ -64,6 +65,6 @@ export default function Calculator() {
         operation={operation}
       />
       <ButtonsContainer buttonRows={calculatorButtons} calculate={calculate} />
-    </switch>
+    </button>
   );
 }
