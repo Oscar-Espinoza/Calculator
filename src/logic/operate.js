@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style */
+/* eslint linebreak-style: ["error", "windows"] */
 import Big from 'big.js';
 
 export default function operate(numberOne, numberTwo, operation) {

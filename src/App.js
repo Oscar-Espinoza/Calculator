@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-stateless-function */
 import Calculator from './components/Calculator';
 
 function App() {
