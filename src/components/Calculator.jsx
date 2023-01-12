@@ -1,5 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import React, { Component } from 'react';
+import { useState } from 'react';
 import ButtonsContainer from './ButtonsContainer';
 import ResultsDisplay from './ResultsDisplay';
 import calculate from '../logic/calculate';
@@ -36,39 +36,34 @@ const calculatorButtons = [
   ],
 ];
 
-export default class Calculator extends Component {
-  constructor() {
-    super();
-    this.state = {
-      total: '0',
-      next: '0',
-      operation: null,
-    };
-  }
+export default function Calculator() {
+  const [calculator, setCalculator] = useState({
+    total: '0',
+    next: '0',
+    operation: null,
+  });
 
-  render() {
-    const {
-      total, next, operation,
-    } = this.state;
+  const {
+    total, next, operation,
+  } = calculator;
 
-    return (
-      <switch
-        className="calculator"
-        onClick={(e) => {
-          if (e.target.classList.contains('calculator-button')) {
-            const newState = calculate(this.state, e.target.innerText);
-            this.setState(newState);
-          }
-        }}
-      >
-        <ResultsDisplay
-          current={next || total}
-          total={total}
-          next={next}
-          operation={operation}
-        />
-        <ButtonsContainer buttonRows={calculatorButtons} calculate={calculate} />
-      </switch>
-    );
-  }
+  return (
+    <switch
+      className="calculator"
+      onClick={(e) => {
+        if (e.target.classList.contains('calculator-button')) {
+          const newState = calculate(calculator, e.target.innerText);
+          setCalculator(newState);
+        }
+      }}
+    >
+      <ResultsDisplay
+        current={next || total}
+        total={total}
+        next={next}
+        operation={operation}
+      />
+      <ButtonsContainer buttonRows={calculatorButtons} calculate={calculate} />
+    </switch>
+  );
 }
