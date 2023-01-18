@@ -1,5 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ButtonsContainer from './ButtonsContainer';
 import ResultsDisplay from './ResultsDisplay';
 import calculate from '../logic/calculate';

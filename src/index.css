@@ -3,6 +3,90 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.App {
+  min-height: 100vh;
+  background: #d1dde9;
+}
+/* Header section */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  background: #003366;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.nav * {
+  border-right: 1px solid #000;
+  padding-right: 10px;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav *:hover {
+  color: #83C5BE;
+}
+
+.nav a.active {
+  color: #83C5BE;
+  font-weight: bold;
+}
+
+.nav > :last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+/* Home section */
+
+.home {
+  padding: 2rem;
+  height: 100%;
+
+}
+
+.welcome {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #009888;
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+.calculator-view {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  gap: 15px;
+}
+
+.calculator-view * {
+  flex: 1 1 auto;
+}
+
+.calculator-title {
+  color: #003366;
 }
 
 .calculator {
@@ -10,11 +94,7 @@
   width: fit-content;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
   background: none;
-	color: inherit;
 	border: none;
 	padding: 0;
 	font: inherit;
@@ -23,7 +103,6 @@
 }
 
 .results-container {
-  color: #fff;
   background: #9a9a9a;
   text-align: right;
   grid-column-start: 1;
@@ -51,6 +130,7 @@
   border: 1px solid gray;
   border-top: none;
   cursor: pointer;
+  color: #003366;
 }
 
 .gray {
@@ -63,4 +143,21 @@
 
 .zero {
   grid-column-end: span 2;
+}
+
+/* Quote view */
+
+.quote-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 100px;
+}
+
+.quote, .quote * {
+  text-align: center;
+  font-size: 2rem;
+  color: #003366;
 }

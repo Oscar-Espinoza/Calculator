@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="calculator-view"
+>
+  <h2
+    className="calculator-title"
+  >
+    Lets do some math
+  </h2>
+  <button
+    className="calculator"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="results-container"
+    >
+      <p
+        className="results"
+      >
+        0
+      </p>
+    </div>
+    <option
+      className="gray calculator-button operator"
+    >
+      AC
+    </option>
+    <option
+      className="gray calculator-button operator"
+    >
+      +/-
+    </option>
+    <option
+      className="gray calculator-button operator"
+    >
+      %
+    </option>
+    <option
+      className="orange calculator-button operator"
+    >
+      ÷
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      9
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      8
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      7
+    </option>
+    <option
+      className="orange calculator-button operator"
+    >
+      x
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      6
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      5
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      4
+    </option>
+    <option
+      className="orange calculator-button operator"
+    >
+      -
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      3
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      2
+    </option>
+    <option
+      className="gray calculator-button number"
+    >
+      1
+    </option>
+    <option
+      className="orange calculator-button operator"
+    >
+      +
+    </option>
+    <option
+      className="gray calculator-button zero number"
+    >
+      0
+    </option>
+    <option
+      className="gray calculator-button decimal"
+    >
+      .
+    </option>
+    <option
+      className="orange calculator-button equals"
+    >
+      =
+    </option>
+  </button>
+</div>
+`;
