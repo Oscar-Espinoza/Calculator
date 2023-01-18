@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="quote-container"
+>
+  <p
+    className="quote"
+  >
+    <q>
+      Mathematics is the queen of the sciences and number theory is the queen of mathematics.
+    </q>
+    - Carl Friedrich Gauss
+  </p>
+</div>
+`;
