@@ -54,9 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://calculator-app-k3ba.onrender.com/Calculator)
+- [Live Demo Link](https://calculator-app-k3ba.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
