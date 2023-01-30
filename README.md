@@ -23,9 +23,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Simple calculator] <a name="about-project"></a>
+# 📖 Simple calculator <a name="about-project"></a>
 
-**[Simple calculator]** is a calculator app where you can do all the basic operations and see the results display in real time.
+**Simple calculator** is a calculator app where you can do all the basic operations and see the results display in real time.
 
 ## 🛠 Built With <a name="built-with"></a>
 
